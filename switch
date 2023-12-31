@@ -1,0 +1,22 @@
+
+var person = {
+    myName: "Usman Muhammad",
+    age: 22
+};
+
+function checkAge() {
+    switch(true) {
+        case (person.age == 17):
+            console.log(person.myName + " Is not adult");
+            break;
+
+        case (person.age >= 18):
+            console.log(person.myName + " Is an adult");
+            break;
+
+        default:
+            console.log("We don't know!!");
+    }
+}
+
+checkAge();
