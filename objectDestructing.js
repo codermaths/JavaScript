@@ -20,9 +20,9 @@ const getUser = () => {
 const user = getUser();
 
 const { lastName, firstName, address: { city : theCity } } = user;
-const { address : { fullAddress : { dorNumber : number } } } = user;
+const { age : theAge, address : { fullAddress : { dorNumber : number } } } = user;
 
-console.log(`${lastName}, ${firstName}, ${theCity}, ${number}`);
+console.log(`${lastName}, ${firstName}, ${theAge}, ${theCity}, ${number}`);
 
 
 
